@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Language: ko"
+
+#: src/components/Auth/presenter.js
+msgid "Log in"
+msgstr "로그인"
+
+#: src/components/Footer/index.js
+msgid "About Us"
+msgstr "회사소개"
+
+#: src/components/Footer/index.js
+msgid "Support"
+msgstr "고객지원"
+
+#: src/components/Footer/index.js
+msgid "Blog"
+msgstr "블로그"
+
+#: src/components/Footer/index.js
+msgid "Press"
+msgstr "언론"
+
+#: src/components/Footer/index.js
+msgid "API"
+msgstr "API"
+
+#: src/components/Footer/index.js
+msgid "Jobs"
+msgstr "채용"
+
+#: src/components/Footer/index.js
+msgid "Privacy"
+msgstr "약관"
+
+#: src/components/Footer/index.js
+msgid "Terms"
+msgstr "정책"
+
+#: src/components/Footer/index.js
+msgid "Directory"
+msgstr "분류"
+
+#: src/components/Footer/index.js
+msgid "Language"
+msgstr "언어"
+
