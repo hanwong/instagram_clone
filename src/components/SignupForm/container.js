@@ -4,7 +4,7 @@ import SignupForm from './presenter'
 class Container extends Component {
   state = {
     email: '',
-    fullname: '',
+    fullName: '',
     username: '',
     password: ''
   }
@@ -21,12 +21,12 @@ class Container extends Component {
   }
 
   render () {
-    const { email, fullname, username, password } = this.state
+    const { email, fullName, username, password } = this.state
     return <SignupForm
             handleInputChange={this._handleInputChange}
             handleSubmit={this._handleSubmit}
             emailValue={email}
-            fullnameValue={fullname}
+            fullNameValue={fullName}
             usernameValue={username}
             passwordValue={password}
            />
