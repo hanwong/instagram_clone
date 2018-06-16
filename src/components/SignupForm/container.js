@@ -19,12 +19,16 @@ class Container extends Component {
     event.preventDefault()
     // redux action 
   }
+  _handleFacebookLogin = response => {
+    console.log(response)
+  }
 
   render () {
     const { email, fullName, username, password } = this.state
     return <SignupForm
             handleInputChange={this._handleInputChange}
             handleSubmit={this._handleSubmit}
+            handleFacebookLogin={this._handleFacebookLogin}
             emailValue={email}
             fullNameValue={fullName}
             usernameValue={username}

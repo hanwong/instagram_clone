@@ -46,3 +46,10 @@ msgstr "분류"
 msgid "Language"
 msgstr "언어"
 
+#: src/components/LogiinForm/presenter.js
+msgid "Log in with Facebook"
+msgstr ""
+
+#: src/components/SignupForm/presenter.js
+msgid "Log in with Facebook"
+msgstr ""

@@ -11,6 +11,7 @@ export const translations = {
     'Terms': '정책',
     'Directory': '분류',
     'Language': '언어',
+    'Log in with Facebook': '',
   },
   'options': {
   },

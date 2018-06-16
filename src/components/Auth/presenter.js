@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 import styles from './styles.scss'
 import LoginForm from 'components/LoginForm'
 import SignupForm from 'components/SignupForm'
