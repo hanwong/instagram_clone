@@ -29,6 +29,7 @@ const LoginForm = (props, context) => (
         type="submit"
         value="Log in"
         className={styles.button}
+        onChange={props.handleInputChange}
       />
     </form>
     <span className={styles.divider}>or</span>

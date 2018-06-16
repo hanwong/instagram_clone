@@ -48,7 +48,12 @@ const SignupForm = (props, context) => (
         value={props.passwordValue}
         onChange={props.handleInputChange}
       />
-      <input type="submit" value="Sign up" className={styles.button} />
+      <input
+        type="submit"
+        value="Sign up"
+        className={styles.button}
+        onChange={props.handleInputChange}
+      />
     </form>
     <p className={styles.terms}>
       By signing up, you agree to our <span>Terms & Privacy Policy</span>.
