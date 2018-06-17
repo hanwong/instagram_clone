@@ -11,9 +11,9 @@ const App = props => [
   <Footer key={3} />
 ]
 
-App.PropTypes = {
-  isLoggedin: PropTypes.bool.isRequired
-}
+App.propTypes = {
+  isLoggedIn: PropTypes.bool.isRequired
+};
 
 const PrivateRoutes = props => (
   <Switch>

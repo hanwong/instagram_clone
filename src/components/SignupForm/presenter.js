@@ -13,7 +13,7 @@ const SignupForm = (props, context) => (
       autoLoad={false}
       fields="name,email,picture"
       callback={props.handleFacebookLogin}
-      cssClass={styles.facebookLink}
+      cssClass={styles.button}
       icon="fa-facebook-square"
       textButton={context.t("Log in with Facebook")}
     />

@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import LoginForm from './presenter'
+import PropTypes from 'prop-types'
 
 class Container extends Component {
   state = {
     username: '',
     password: ''
+  }
+
+  static propTypes = {
+    facebookLogin: PropTypes.func.isRequired
   }
 
   _handleInputChange = event => {
@@ -18,7 +23,8 @@ class Container extends Component {
     // redux action 
   }
   _handleFacebookLogin = response => {
-    console.log(response)
+    const { facebookLogin } = this.props
+    facebookLogin(response.accessToken)
   }
 
   render () {
