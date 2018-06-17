@@ -7,7 +7,7 @@ import Auth from 'components/Auth'
 
 const App = props => [
   // Nav
-  props.isLoggedin ? <PrivateRoutes key={2}/> : <PublicRoutes key={2}/>,
+  props.isLoggedIn ? <PrivateRoutes key={2} /> : <PublicRoutes key={2} />,
   <Footer key={3} />
 ]
 
