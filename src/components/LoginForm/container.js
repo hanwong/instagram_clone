@@ -9,7 +9,8 @@ class Container extends Component {
   }
 
   static propTypes = {
-    facebookLogin: PropTypes.func.isRequired
+    facebookLogin: PropTypes.func.isRequired,
+    usernameLogin: PropTypes.func.isRequired
   }
 
   _handleInputChange = event => {
@@ -19,8 +20,11 @@ class Container extends Component {
     })
   }
   _handleSubmit = event => {
+    const { username, password } = this.state
+    const { usernameLogin } = this.props
     event.preventDefault()
     // redux action 
+    usernameLogin(username, password)
   }
   _handleFacebookLogin = response => {
     const { facebookLogin } = this.props
