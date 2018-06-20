@@ -5,15 +5,15 @@ import PropTypes from 'prop-types'
 class Container extends Component {
   state = {
     email: '',
-    fullName: '',
+    name: '',
     username: '',
     password: ''
   }
 
   static propTypes = {
-    facebookLogin: PropTypes.func.isRequired
+    facebookLogin: PropTypes.func.isRequired,
+    createAccount: PropTypes.func.isRequired
   }
-
   _handleInputChange = event => {
     const { target: { name, value } } = event
     this.setState({
@@ -22,7 +22,10 @@ class Container extends Component {
   }
   _handleSubmit = event => {
     event.preventDefault()
+    const { username, password, email, name } = this.state
+    const { createAccount } = this.props
     // redux action 
+    createAccount(username, password, email, name)
   }
   _handleFacebookLogin = response => {
     const { facebookLogin } = this.props
@@ -30,13 +33,13 @@ class Container extends Component {
   }
 
   render () {
-    const { email, fullName, username, password } = this.state
+    const { email, name, username, password } = this.state
     return <SignupForm
             handleInputChange={this._handleInputChange}
             handleSubmit={this._handleSubmit}
             handleFacebookLogin={this._handleFacebookLogin}
             emailValue={email}
-            fullNameValue={fullName}
+            nameValue={name}
             usernameValue={username}
             passwordValue={password}
            />

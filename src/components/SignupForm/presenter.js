@@ -32,10 +32,10 @@ const SignupForm = (props, context) => (
       />
       <input
         type="text"
-        name="fullName"
+        name="name"
         placeholder="Full Name"
         className={styles.textInput}
-        value={props.fullNameValue}
+        value={props.nameValue}
         onChange={props.handleInputChange}
       />
       <input
@@ -69,7 +69,7 @@ const SignupForm = (props, context) => (
 
 SignupForm.propTypes = {
   emailValue: PropTypes.string.isRequired,
-  fullNameValue: PropTypes.string.isRequired,
+  nameValue: PropTypes.string.isRequired,
   usernameValue: PropTypes.string.isRequired,
   passwordValue: PropTypes.string.isRequired,
   handleInputChange: PropTypes.func.isRequired,

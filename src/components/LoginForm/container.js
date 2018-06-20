@@ -20,9 +20,9 @@ class Container extends Component {
     })
   }
   _handleSubmit = event => {
+    event.preventDefault()
     const { username, password } = this.state
     const { usernameLogin } = this.props
-    event.preventDefault()
     // redux action 
     usernameLogin(username, password)
   }
